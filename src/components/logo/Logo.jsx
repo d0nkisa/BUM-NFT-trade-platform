@@ -6,12 +6,8 @@ import classNames from "classnames";
 
 export default function Header(props) {
     if (props.type == "muted") {
-        return (
-            <img className={props.type} src="/images/logo-muted.svg" alt="muteable-logo" />
-        );
+        return (<img className={props.type} type={props.type} src="/images/logo-muted.svg" alt="muteable-logo" />);
     }
     else
-        return (
-            <img className={props.type} src="/images/logo.svg" alt="muteable-logo" />
-        );
+        return (<img className={props.type} type={props.type} src="/images/logo.svg" alt="muteable-logo" />);
 }
