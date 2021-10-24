@@ -4,7 +4,7 @@ import Link from "../link/Link";
 import styles from "./Logo.module.scss";
 import classNames from "classnames";
 
-export default function Header(type) {
+export default function Header({ type }) {
     if (type == "muted") {
         return (<img type={type} src="/images/logo-muted.svg" alt="muteable-logo" />);
     }
