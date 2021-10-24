@@ -11,3 +11,7 @@ export default function Logo({ type }) {
     else
         return (<img type={type} src="/images/logo.svg" alt="muteable-logo" />);
 }
+
+Logo.defaultProps = {
+    type: 'default',
+};
