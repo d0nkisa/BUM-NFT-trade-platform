@@ -4,10 +4,10 @@ import Link from "../link/Link";
 import styles from "./Logo.module.scss";
 import classNames from "classnames";
 
-export default function Header(props) {
-    if (props.type == "muted") {
-        return (<img className={props.type} type={props.type} src="/images/logo-muted.svg" alt="muteable-logo" />);
+export default function Header(type) {
+    if (type == "muted") {
+        return (<img type={type} src="/images/logo-muted.svg" alt="muteable-logo" />);
     }
     else
-        return (<img className={props.type} type={props.type} src="/images/logo.svg" alt="muteable-logo" />);
+        return (<img type={type} src="/images/logo.svg" alt="muteable-logo" />);
 }
