@@ -6,10 +6,11 @@ import classNames from "classnames";
 
 export default function Logo({ type }) {
     if (type == "muted") {
-        return (<img type={type} src="/images/logo-muted.svg" alt="muteable-logo" />);
+        return (<img type={type} src="/images/logo-muted.svg" />);
     }
-    else
-        return (<img type={type} src="/images/logo.svg" alt="muteable-logo" />);
+    else {
+        return (<img type={type} src="/images/logo.svg" />);
+    }
 }
 
 Logo.defaultProps = {
